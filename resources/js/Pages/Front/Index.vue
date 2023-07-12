@@ -2,7 +2,7 @@
 import { Head, Link } from '@inertiajs/vue3';
 import { onMounted, ref } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
-import WatermelonJSON from "/public/img/robot.json";
+import WatermelonJSON from "/public/img/animation.json";
 
 // Menginisialisasi variabel anim sebagai referensi Vue
 let anim = ref();
@@ -52,10 +52,10 @@ const props = defineProps({
 
 <template>
     <Head title="Welcome" />
-    <nav class="bg-white">
+    <nav class="bg-white sticky top-0 z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="/" class="flex h-20 w-20 rounded-2xl justify-center items-center">
-                <img src="img/logo.JPG" class="h-24 rounded-full" alt=" Logo" />
+            <a href="/" class="flex justify-center items-center">
+                <img src="img/logo.png" class="h-14 " alt=" Logo" />
                 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Dosen AI</span> -->
             </a>
             <div class="flex md:order-2">
@@ -190,7 +190,7 @@ const props = defineProps({
                         <Logo />
                     </div>
                     <div className="text-sm h-8 text-gray-600">
-                        <img src="img/logo.JPG" class="h-8 mr-3" alt=" Logo" />
+                        <img src="img/logo2.jpg" class="w-20 rounded-full" alt=" Logo" />
                         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Dosen AI</span> -->
                     </div>
                 </div>
